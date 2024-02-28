@@ -1,5 +1,4 @@
 import { useState } from "react";
-import RenderMsgOnLoad from "./components/RenderMsgOnLoad";
 
 function App() {
   const [bgColor, setBgColor] = useState("navy");
@@ -9,8 +8,6 @@ function App() {
       className="w-full h-screen duration-200"
       style={{ backgroundColor: bgColor, fontWeight: "bolder" }}
     >
-     
-
       <h1
         className="flex justify-center "
         style={{
@@ -19,11 +16,9 @@ function App() {
           fontSize: "50px",
         }}
       >
-         <RenderMsgOnLoad />
         Color: {bgColor}{" "}
       </h1>
 
-      
       <div className="fixed flex flex-wrap justify-center bottom-12 inset-x-0 px-2">
         <div className="flex flex-wrap justify-center gap-3 shadow-xl bg-white px-3 py-2 rounded-xl">
           <button
